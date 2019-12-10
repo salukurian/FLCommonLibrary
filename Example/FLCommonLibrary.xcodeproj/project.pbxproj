@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		1550F6E9729A986E9AA7BEF3 /* Pods_FLCommonLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLCommonLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6310D600CA022E391C6368 /* Pods_FLCommonLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLCommonLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		42505429E29B05926BB7A6B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		42505429E29B05926BB7A6B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5033917D6FDB73C7CB9F0F07 /* Pods-FLCommonLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLCommonLibrary_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLCommonLibrary_Tests/Pods-FLCommonLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* FLCommonLibrary_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLCommonLibrary_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,10 +62,10 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6CC5884E0AD6ADB3AF722C8A /* Pods-FLCommonLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLCommonLibrary_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLCommonLibrary_Tests/Pods-FLCommonLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		742218AF29E04506B2F6C3BF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		742218AF29E04506B2F6C3BF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		76E731881D2BBF1A67DB9497 /* Pods-FLCommonLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLCommonLibrary_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLCommonLibrary_Example/Pods-FLCommonLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9696605CDCE73EB07F4193B4 /* FLCommonLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FLCommonLibrary.podspec; path = ../FLCommonLibrary.podspec; sourceTree = "<group>"; };
+		9696605CDCE73EB07F4193B4 /* FLCommonLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FLCommonLibrary.podspec; path = ../FLCommonLibrary.podspec; sourceTree = "<group>"; };
 		BA7442A4E6F0A3B08DE8FCFB /* Pods-FLCommonLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLCommonLibrary_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLCommonLibrary_Example/Pods-FLCommonLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,7 +247,12 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = salukurian;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = B6PJY8ADY4;
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
+						ProvisioningStyle = Manual;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -257,6 +262,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -497,12 +503,15 @@
 			baseConfigurationReference = 76E731881D2BBF1A67DB9497 /* Pods-FLCommonLibrary_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = B6PJY8ADY4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FLCommonLibrary/FLCommonLibrary-Prefix.pch";
 				INFOPLIST_FILE = "FLCommonLibrary/FLCommonLibrary-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Any Zenprise Wildcard Jessie Profile";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -513,12 +522,15 @@
 			baseConfigurationReference = BA7442A4E6F0A3B08DE8FCFB /* Pods-FLCommonLibrary_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = B6PJY8ADY4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FLCommonLibrary/FLCommonLibrary-Prefix.pch";
 				INFOPLIST_FILE = "FLCommonLibrary/FLCommonLibrary-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Any Zenprise Wildcard Jessie Profile";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -529,6 +541,9 @@
 			baseConfigurationReference = 6CC5884E0AD6ADB3AF722C8A /* Pods-FLCommonLibrary_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -543,6 +558,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLCommonLibrary_Example.app/FLCommonLibrary_Example";
 				WRAPPER_EXTENSION = xctest;
@@ -554,6 +570,8 @@
 			baseConfigurationReference = 5033917D6FDB73C7CB9F0F07 /* Pods-FLCommonLibrary_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -564,6 +582,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLCommonLibrary_Example.app/FLCommonLibrary_Example";
 				WRAPPER_EXTENSION = xctest;
