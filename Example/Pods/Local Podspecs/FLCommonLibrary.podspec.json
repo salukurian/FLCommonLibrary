@@ -1,0 +1,22 @@
+{
+  "name": "FLCommonLibrary",
+  "version": "0.1.1",
+  "summary": "this is a test podspec.",
+  "description": "some description this is a test podspec.",
+  "homepage": "https://github.com/salukurian/FLCommonLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "salukurian": "salu.kurian@citrix.com"
+  },
+  "source": {
+    "git": "https://github.com/salukurian/FLCommonLibrary.git",
+    "tag": "0.1.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FLCommonLibrary/Classes/**/*"
+}
